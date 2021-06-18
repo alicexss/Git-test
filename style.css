@@ -1,0 +1,32 @@
+p {
+  color: rgb(243, 94, 114);
+  font-family: "Baloo Tammudu 2", cursive;
+  font-size: 30px;
+}
+
+.heart {
+  margin: 80px;
+  background-color: red;
+  height: 80px;
+  transform: rotate(-45deg);
+  width: 80px;
+  position: relative;
+}
+
+.heart:before,
+.heart:after {
+  content: "";
+  background-color: red;
+  border-radius: 50%;
+  height: 80px;
+  position: absolute;
+  width: 80px;
+}
+
+.heart:before {
+  top: -40px;
+}
+
+.heart:after {
+  left: 40px;
+}
